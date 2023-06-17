@@ -58,6 +58,10 @@ nav a:visited{
     color: #fff;
 }
 
+form{
+    display:flex;
+}
+
 .search-bar{
     position:absolute;
     bottom: -1em;
