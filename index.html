@@ -16,9 +16,11 @@
             <h1>Find your film</h1>
             <h5><a href="watchList.html">My watchlist</a></h5>
             <div class="search-bar">
-                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
-                <input type="text" placeholder="Search movie" id="search-bar">
-                <button id="search-btn">Search</button>
+                <form onsubmit="return false;">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                    <input type="text" placeholder="Search movie" id="search-bar" onkeydown="if (event.keyCode == 13) { event.preventDefault(); document.getElementById('search-btn').click(); }">
+                    <button type="button" id="search-btn">Search</button>
+                </form>
             </div>
         </nav>
         <section id="movies-render">
