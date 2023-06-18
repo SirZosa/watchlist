@@ -63,7 +63,7 @@ function renderWatchlist(data){
         const movieInfo = {
             Title: movieInList.Title,
             imdbRating: movieInList.imdbRating,
-            Duration: movieInList.Runtime,
+            Duration: movieInList.Duration,
             Genre: movieInList.Genre,
             Plot: movieInList.Plot,
             Poster: movieInList.Poster,
